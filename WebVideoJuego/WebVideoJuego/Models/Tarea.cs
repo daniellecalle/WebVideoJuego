@@ -10,15 +10,21 @@
 		#region "Atributos"
 			private string nombre;
 			private string descripcion;
+			private string fecha;
+			private string hora;
+			private int estado;
 		#endregion
 
 		#region "Contructores"
 			public Tarea() { }
 
-			public Tarea(string nombre, string descripcion)
+			public Tarea(string nombre, string descripcion, string fecha, string hora, int estado)
 			{
 				this.nombre = nombre;
 				this.descripcion = descripcion;
+				this.fecha = fecha;
+				this.hora = hora;
+			this.estado = estado;
 			}
 		#endregion
 
@@ -43,10 +49,40 @@
 				this.descripcion = descripcion;
 			}
 
-		public bool Validar()
-		{
-			return (!String.IsNullOrEmpty(nombre) || !String.IsNullOrEmpty(descripcion));
-		}
+			public string GetFecha()
+			{
+				return fecha;
+			}
+
+			public void SetFecha(string fecha)
+			{
+				this.fecha = fecha;
+			}
+
+			public string GetHora()
+			{
+				return hora;
+			}
+
+			public void SetHora(string hora)
+			{
+				this.hora = hora;
+			}
+
+			public int GetEstado()
+			{
+				return estado;
+			}
+
+			public void SetEstado(int estado)
+			{
+				this.estado = estado;
+			}
+
+			public bool Validar()
+			{
+				return (!String.IsNullOrEmpty(nombre) || !String.IsNullOrEmpty(descripcion));
+			}
 		#endregion
 	}
 }

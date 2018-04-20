@@ -1,4 +1,4 @@
-﻿namespace WebVideoJuego.Models
+﻿  namespace WebVideoJuego.Models
 {
 	using System;
 	using System.Collections.Generic;

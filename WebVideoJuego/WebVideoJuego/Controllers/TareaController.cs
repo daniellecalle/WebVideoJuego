@@ -25,7 +25,11 @@
 		{
 			string nombre = Request["txtNombre"];
 			string descripcion = Request["txtDescripcion"];
-			objT = new Tarea(nombre, descripcion);
+			string fecha = Request["txtFecha"];
+			string hora = Request["txtHora"];
+			int est = Int32.Parse(Request["cbEstado"]);
+
+			objT = new Tarea(nombre, descripcion, fecha, hora, est);
 
 			if (!objT.Validar())
 			{
@@ -42,8 +46,10 @@
 					throw;
 				}
 
-				string sql = "INSERT INTO TBLTAREA VALUES ('" + objT.GetNombre() 
-					+ "', '" +objT.GetDescripcion()+"')";
+				string sql = "INSERT INTO TBLTAREA (NOMBRE, DESCRIPCION, FECHA, HORA) " +
+					"VALUES ('" + objT.GetNombre() + "', '" +objT.GetDescripcion() +"', '"+ objT.GetFecha()
+					+"', '"+objT.GetHora()+"')";
+
 				int n = con.operaracion(sql, a);
 
 				if (n != 0)

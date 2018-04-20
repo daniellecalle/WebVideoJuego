@@ -3,6 +3,7 @@
 	ViewBag.Title = "NewTarea";
 }
 
+
 <form action="/Tarea/Created" method="post">
 	<div class="form-group">
 		<label>Nombre: </label>
@@ -10,7 +11,27 @@
 	</div>
 	<div class="form-group">
 		<label>Descripcion: </label>
-		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="txtDescripcion"></textarea>
+		<textarea class="form-control"  rows="3" name="txtDescripcion"></textarea>
+	</div>
+
+	<div class="form-group">
+		<label>Fecha: </label>
+		<input type="date" name="txtFecha" class="form-control">
+	</div>
+
+	<div class="form-group">
+		<label>Hora: </label>
+		<input type="time" name="txtHora" class="form-control">
+	</div>
+
+	<div class="form-group">
+		<label>Seleccione Color Estado: </label>
+		<select name="cbEstado" class="form-control">
+			<option value="1">Azul</option>
+			<option value="2">Rojo</option>
+			<option value="3">Amarillo</option>
+			<option value="4">Naranja</option>
+		</select>
 	</div>
 	<input type="submit" name="btnGuardar" value="Guardar" class="btn btn-primary" />
 </form>
