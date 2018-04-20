@@ -277,7 +277,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Estado\ViewEstado.cshtml" />
+    <Content Include="Views\Estado\NuevoEstado.cshtml" />
+    <Content Include="Views\Tarea\NuevaTarea.cshtml" />
+    <Content Include="Views\Tarea\ShowTareas.cshtml" />
+    <Content Include="Views\Tarea\MessageError.cshtml" />
+    <Content Include="Views\Estado\MessageError.cshtml" />
+    <Content Include="Views\Estado\ShowEstados.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,7 +290,6 @@
     <Folder Include="Views\EquipoDesarrollo\" />
     <Folder Include="Views\EstadoTarea\" />
     <Folder Include="Views\ProductoInterno\" />
-    <Folder Include="Views\Tarea\" />
     <Folder Include="Views\VideoJuego\" />
   </ItemGroup>
   <ItemGroup>

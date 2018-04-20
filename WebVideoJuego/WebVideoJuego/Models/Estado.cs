@@ -54,6 +54,13 @@
 			{
 				this.descripcion = descripcion;
 			}
+
+			public bool Validar()
+			{
+				return (!String.IsNullOrEmpty(nombre)||!String.IsNullOrEmpty(color)
+					||!String.IsNullOrEmpty(descripcion));
+			}
+
 		#endregion
 	}
 }
