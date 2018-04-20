@@ -283,6 +283,7 @@
     <Content Include="Views\Tarea\MessageError.cshtml" />
     <Content Include="Views\Estado\MessageError.cshtml" />
     <Content Include="Views\Estado\ShowEstados.cshtml" />
+    <Content Include="Views\Tarea\_NewTarea.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
