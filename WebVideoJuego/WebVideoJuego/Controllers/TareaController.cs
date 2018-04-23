@@ -12,6 +12,7 @@
     {
 		Conexion con = new Conexion();
 		SqlConnection a;
+		SqlDataReader datos;
 		Tarea objT;
 
 		// GET: Tarea
@@ -27,9 +28,8 @@
 			string descripcion = Request["txtDescripcion"];
 			string fecha = Request["txtFecha"];
 			string hora = Request["txtHora"];
-			int est = Int32.Parse(Request["cbEstado"]);
 
-			objT = new Tarea(nombre, descripcion, fecha, hora, est);
+			objT = new Tarea(nombre, descripcion, fecha, hora);
 
 			if (!objT.Validar())
 			{
@@ -63,11 +63,28 @@
 			}
 		}
 
-	
-		public void LimpiarCampos()
+		[HttpPost]
+		public ActionResult Read()
 		{
 			
+			try
+			{
+				a = con.Conectar();
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+
+			string sql = "SELECT * FROM TBLTAREA";
+			datos = con.Consulta(sql, a);
+			Console.WriteLine(datos);
+
+			return View("ShowTareas");
 		}
+
+	
+
 
 	}
 }

@@ -68,6 +68,21 @@
 				}
 			}
 
+			public SqlDataReader Consulta(string conSQL, SqlConnection conector)
+			{
+				try
+				{
+					SqlCommand comando = new SqlCommand(conSQL, conector);
+					SqlDataReader datos = comando.ExecuteReader();
+					return datos;
+				}
+				catch (SqlException e)
+				{
+					return null;
+					throw e;				
+				}
+			}
+
 		#endregion
 
 

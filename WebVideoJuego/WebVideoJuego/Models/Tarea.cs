@@ -12,19 +12,18 @@
 			private string descripcion;
 			private string fecha;
 			private string hora;
-			private int estado;
+			//private int estado;
 		#endregion
 
 		#region "Contructores"
 			public Tarea() { }
 
-			public Tarea(string nombre, string descripcion, string fecha, string hora, int estado)
+			public Tarea(string nombre, string descripcion, string fecha, string hora)
 			{
 				this.nombre = nombre;
 				this.descripcion = descripcion;
 				this.fecha = fecha;
 				this.hora = hora;
-			this.estado = estado;
 			}
 		#endregion
 
@@ -69,15 +68,6 @@
 				this.hora = hora;
 			}
 
-			public int GetEstado()
-			{
-				return estado;
-			}
-
-			public void SetEstado(int estado)
-			{
-				this.estado = estado;
-			}
 
 			public bool Validar()
 			{

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebVideoJuego.Controllers
 {
-    public class ProductoInternoController : Controller
+    public class ProductorInternoController : Controller
     {
         // GET: ProductoInterno
         public ActionResult Index()

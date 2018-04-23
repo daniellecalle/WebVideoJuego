@@ -199,7 +199,7 @@
     <Compile Include="Controllers\EstadoTareaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\ProductoInternoController.cs" />
+    <Compile Include="Controllers\ProductorInternoController.cs" />
     <Compile Include="Controllers\TareaController.cs" />
     <Compile Include="Controllers\VideoJuegoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -287,14 +287,14 @@
     <Content Include="Views\Estado\MessageError.cshtml" />
     <Content Include="Views\Estado\ShowEstados.cshtml" />
     <Content Include="Views\Tarea\_NewTarea.cshtml" />
+    <Content Include="Views\VideoJuego\FormVideojuego.cshtml" />
+    <Content Include="Views\Estado\_NuevoEstado.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cliente\" />
     <Folder Include="Views\EquipoDesarrollo\" />
-    <Folder Include="Views\EstadoTarea\" />
     <Folder Include="Views\ProductoInterno\" />
-    <Folder Include="Views\VideoJuego\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

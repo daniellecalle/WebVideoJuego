@@ -9,21 +9,7 @@
 		<div class="panel-heading">Nuevo Estado</div>
 		<div class="panel-body">
 			<center>
-				<form action="/Estado/Created" method="post">
-					<div class="form-group">
-						<label>Nombre: </label>
-						<input type="text" class="form-control" required placeholder="Nombre Tarea" name="txtNombre">
-					</div>
-					<div class="form-group">
-						<label>Color: </label><br />
-						<input type="color" name="fvColor"  value="#ffff00" class="form-control"/>
-					</div>
-					<div class="form-group">
-						<label>Descripcion: </label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="txtDescripcion"></textarea>
-					</div>
-					<input type="submit" name="btnGuardar" value="Guardar" class="btn btn-primary" />
-				</form>
+				@Html.Partial("_NuevoEstado");
 			</center>
 		</div>
 	</div>
