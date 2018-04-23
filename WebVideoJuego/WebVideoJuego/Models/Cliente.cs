@@ -5,7 +5,7 @@
 	using System.Linq;
 	using System.Web;
 
-	public class Cliente: Persona
+	public class Cliente : Persona
 	{
 		#region "Atributos"
 			private string nit;
@@ -13,13 +13,14 @@
 		#endregion
 
 		#region "Contructores"
-			public Cliente() { }
-
-			public Cliente(string nit, string tipoCliente)
+			public Cliente(string nit, string tipoCliente, string cedula, string nombre, 
+				string direccion, string apellido, string telefono)
+				:base(cedula, nombre, direccion, apellido, telefono)
 			{
 				this.nit = nit;
 				this.tipoCliente = tipoCliente;
 			}
+		
 		#endregion
 
 		#region "Metodos Publicos"
@@ -42,6 +43,19 @@
 			{
 				this.tipoCliente = tipoCliente;
 			}
+
+
+		public bool Validar2()
+		{
+			if (!String.IsNullOrEmpty(nit)||!String.IsNullOrEmpty(tipoCliente))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
 		#endregion
 
 	}

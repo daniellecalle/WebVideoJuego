@@ -11,7 +11,7 @@ namespace WebVideoJuego.Controllers
         // GET: ProductoInterno
         public ActionResult Index()
         {
-            return View();
+            return View("FormProductorInterno");
         }
     }
 }

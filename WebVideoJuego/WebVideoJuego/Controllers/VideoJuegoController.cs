@@ -11,7 +11,7 @@ namespace WebVideoJuego.Controllers
         // GET: VideoJuego
         public ActionResult Index()
         {
-            return View();
+            return View("FormVideojuego");
         }
     }
 }

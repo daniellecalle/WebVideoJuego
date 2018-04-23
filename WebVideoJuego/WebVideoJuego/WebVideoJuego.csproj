@@ -289,12 +289,16 @@
     <Content Include="Views\Tarea\_NewTarea.cshtml" />
     <Content Include="Views\VideoJuego\FormVideojuego.cshtml" />
     <Content Include="Views\Estado\_NuevoEstado.cshtml" />
+    <Content Include="Views\EquipoDesarrollo\FormEquipoDesarrollo.cshtml" />
+    <Content Include="Views\Cliente\FormCliente.cshtml" />
+    <Content Include="Views\ProductorInterno\FormProductorInterno.cshtml" />
+    <Content Include="Views\Cliente\MostrarClientes.cshtml" />
+    <Content Include="Views\Cliente\_NuevoCliente.cshtml" />
+    <Content Include="Views\Cliente\ErrorMesage.cshtml" />
+    <Content Include="Views\Cliente\errorMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Cliente\" />
-    <Folder Include="Views\EquipoDesarrollo\" />
-    <Folder Include="Views\ProductoInterno\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

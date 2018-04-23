@@ -82,6 +82,18 @@
 				this.telefono = telefono;
 			}
 
+		public bool Validar1()
+		{
+			if (!String.IsNullOrEmpty(cedula) || !String.IsNullOrEmpty(nombre) || !String.IsNullOrEmpty(apellido)
+				|| !String.IsNullOrEmpty(telefono) || !String.IsNullOrEmpty(direccion))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
 
 		#endregion
 

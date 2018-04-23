@@ -11,7 +11,7 @@ namespace WebVideoJuego.Controllers
         // GET: EquipoDesarrollo
         public ActionResult Index()
         {
-            return View();
+            return View("FormEquipoDesarrollo");
         }
     }
 }
